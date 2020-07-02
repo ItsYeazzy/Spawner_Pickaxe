@@ -1,0 +1,6 @@
+name: spawner_pickaxe
+version: "1.2.0"
+api: 1.0 0
+main: royal\main
+author: royal
+depend: [EconomyAPI]
