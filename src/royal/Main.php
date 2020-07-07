@@ -10,7 +10,7 @@ use pocketmine\item\Item;
 use pocketmine\item\ItemFactory;
 use pocketmine\event\Listener;
 
-class main extends PluginBase implements Listener{
+class Main extends PluginBase implements Listener{
     public function onEnable()
     {
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
