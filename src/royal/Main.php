@@ -16,7 +16,7 @@ class Main extends PluginBase implements Listener{
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
         $this->getLogger()->info( "§aPlugin Chargé avec succès !");
         ItemFactory::registerItem(new Pioche(), true );
-        $this->getPluginManager()->registerEvents(new spawner($this), $this);
+        $this->getPluginManager()->registerEvents(new Spawner($this), $this);
     }
 }
 
