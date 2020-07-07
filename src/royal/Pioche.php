@@ -10,7 +10,7 @@ use pocketmine\block\BlockToolType;
 use pocketmine\entity\Entity;
 use pocketmine\utils\Config;
 
-use royal\spawner;
+
 
 class SpawnerPickaxe extends Pickaxe {
     public function __construct(int $meta = 0){
