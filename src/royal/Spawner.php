@@ -3,14 +3,10 @@
 namespace royal;
 
 
-use pocketmine\event\Listener;
-use pocketmine\plugin\PluginBase as PL;
 use pocketmine\event\block\BlockBreakEvent;
 use pocketmine\block\Block;
 use pocketmine\item\Item;
 use pocketmine\plugin\PluginBase;
-use pocketmine\command\CommandSender;
-use pocketmine\command\Command;
 use pocketmine\level\Level;
 use pocketmine\Player;
 use pocketmine\Server;
