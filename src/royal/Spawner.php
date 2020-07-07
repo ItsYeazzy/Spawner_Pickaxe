@@ -18,7 +18,7 @@ use pocketmine\utils\TextFormat;
 use pocketmine\utils\Config;
 
 
-class spawner extends PL implements Listener {
+class Spawner {
 
     public function onBreak(BlockBreakEvent $event) {
         $item_in_hand = $event->getPlayer()->getInventory()->getItemInHand();
