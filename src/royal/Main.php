@@ -10,7 +10,8 @@ use pocketmine\item\Item;
 use pocketmine\item\ItemFactory;
 use pocketmine\event\Listener;
 
-use royal\pioche;
+use royal\Pioche;
+use royal\Spawner;
 
 class Main extends PluginBase implements Listener{
     public function onEnable()
