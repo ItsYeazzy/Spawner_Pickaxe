@@ -13,7 +13,7 @@ use pocketmine\utils\Config;
 
 
 
-class Pioche extends TieredTool {
+class Pioche extends Pickaxe {
 
 
     public function __construct($meta = 0){
