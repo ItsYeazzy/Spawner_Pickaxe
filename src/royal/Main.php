@@ -2,27 +2,25 @@
 
 namespace royal;
 
+use Core\API\FormAPI\SimpleForm;
+use pocketmine\command\Command;
+use pocketmine\command\CommandSender;
 use pocketmine\plugin\Plugin;
 use pocketmine\plugin\PluginBase;
 use pocketmine\Player;
-use pocketmine\Server;
-use pocketmine\item\Item;
 use pocketmine\item\ItemFactory;
 use pocketmine\event\Listener;
-use pocketmine\plugin\PluginManager;
 
 use onebone\EconomieAPI;
 
-use royal\Pioche;
-use royal\Spawner;
 
 class Main extends PluginBase implements Listener{
     public function onEnable()
     {
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
         $this->getLogger()->info( "§aPlugin Chargé avec succès !");
-        ItemFactory::getPluginManager(new Pioche(), true );
-        $this->getPluginManager()->registerEvents(new Spawner($this), $this);
+        ItemFactory::registerItem(new Pioche($this));
+        $this->getServer()->getPluginManager()->registerEvents(new Spawner($this), $this);
     }
     public function onCommand(CommandSender $player, Command $command, string $label, array $args): bool
     {
@@ -37,8 +35,7 @@ class Main extends PluginBase implements Listener{
     }
     public function openServerForm($player)
     {
-        $api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
-        $form = $api->createSimpleForm(function (Player $player, int $data = null){
+        $form = new SimpleForm(function (Player $player, int $data = null){
             $result = $data;
             if($result === null){
                 return true;

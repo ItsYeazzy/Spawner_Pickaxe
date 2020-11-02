@@ -3,6 +3,7 @@
 namespace royal;
 
 use pocketmine\item\Pickaxe;
+use pocketmine\item\TieredTool;
 use pocketmine\plugin;
 use pocketmine\event;
 use pocketmine\block\Block;
@@ -12,8 +13,10 @@ use pocketmine\utils\Config;
 
 
 
-class SpawnerPickaxe extends Pickaxe {
-    public function __construct(int $meta = 0){
+class Pioche extends TieredTool {
+
+
+    public function __construct($meta = 0){
         parent::__construct( 369, $meta, "Spawner Pickaxe", 5);
     }
 
