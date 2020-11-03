@@ -17,7 +17,8 @@ class Pioche extends Pickaxe {
 
 
     public function __construct($meta = 0){
-        parent::__construct( 369, $meta, "Spawner Pickaxe", 5);
+        $config = new Config(Main::getInstance()->getDataFolder()."Config.yml");
+        parent::__construct( $config->get("Item"), $meta, "Spawner Pickaxe", 5);
     }
 
     public function getBlockToolType() : int{
@@ -30,7 +31,9 @@ class Pioche extends Pickaxe {
 
     public function getMaxDurability(): int
     {
-        return 1000;
+        $config = new Config(Main::getInstance()->getDataFolder()."Config.yml");
+
+        return $config->get("Durabilitie");
     }
 
     public function getAttackPoints() : int{
