@@ -8,7 +8,7 @@ use pocketmine\command\CommandSender;
 use pocketmine\command\PluginCommand;
 use pocketmine\event\Listener;
 use pocketmine\Player;
-use pocketmine\plugin\Plugin;
+use onebone\EconomieAPI;
 use pocketmine\utils\Config;
 use Royal\Main;
 
