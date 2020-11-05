@@ -38,6 +38,7 @@ class Sppioche extends PluginCommand
     }
     public function openServerForm($player)
     {
+        $myMoney = EconomyAPI::getInstance()->myMoney($player);
         $form = new SimpleForm(function (Player $player, int $data = null){
             $result = $data;
             if($result === null){
@@ -45,12 +46,6 @@ class Sppioche extends PluginCommand
             }
             switch($result){
                 case 0:
-                    $myMoney = EconomyAPI::getInstance()->myMoney($player);
-
-                    $player->sendMessage("Vous avez : " . $myMoney . " en monnaie.");
-                    break;
-
-                case 2:
                     $config = new Config($this->plugin->getDataFolder()."Config.yml");
                     $myMoney = EconomyAPI::getInstance()->myMoney($player);
                     if ($myMoney < $config->get("Price_pickaxe")){
@@ -68,8 +63,7 @@ class Sppioche extends PluginCommand
         $config = new Config($this->plugin->getDataFolder()."Config.yml");
 
         $form->setTitle($config->get("titre"));
-        $form->setContent($config->get("ContentUI"));
-        $form->addButton("Money");
+        $form->setContent(str_replace(["{money}", "{player}"], [$myMoney, $player], $config->get("ContentUI")));
         $form->addButton($config->get("name_pioche"));
         $form->sendToPlayer($player);
         return $form;

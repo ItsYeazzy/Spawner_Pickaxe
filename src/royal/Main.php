@@ -21,14 +21,14 @@ class Main extends PluginBase implements Listener{
         self::$instance = $this;
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
         $this->getServer()->getLogger()->info("Plugin Spawner_Pickaxe load ");
-        $this->getLogger()->info( "§aPlugin Chargé avec succès !");
+        $this->getServer()->getLogger()->info( "§aPlugin Chargé avec succès !");
         ItemFactory::registerItem(new Pioche($this));
         $this->getServer()->getCommandMap()->register("commandes", new Sppioche("piocheui", $this));
         $this->getServer()->getPluginManager()->registerEvents(new Spawner($this), $this);
         $config = new Config($this->getDataFolder()."Config.yml", Config::YAML, array(
             "Price_pickaxe" => 100000,
-            "ContentUI" => "PRix de la pioche : ",
             "titre" => "spawnerpickaxe",
+            "ContentUI" => "Salut , {joueur} tu as actuellement {money} de money ",
             "name_pioche" => "pioche en topaze",
             "Item" => 244,
             "phrase" => " tu as cassé un spawner mais tu n'as pas pus le récupéré , domage ",
