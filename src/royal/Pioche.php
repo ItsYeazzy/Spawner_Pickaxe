@@ -3,9 +3,6 @@
 namespace royal;
 
 use pocketmine\item\Pickaxe;
-use pocketmine\item\TieredTool;
-use pocketmine\plugin;
-use pocketmine\event;
 use pocketmine\block\Block;
 use pocketmine\block\BlockToolType;
 use pocketmine\entity\Entity;

@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64a00985-5929-47fe-9bc0-1920e9e3c90a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/royal/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/royal/Main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/royal/commandes/Sppioche.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/royal/commandes/Sppioche.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/royal/Pioche.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/royal/Pioche.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +15,11 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="royaljacquesytb &lt;63215754+royaljacques@users.noreply.github.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1iXjAvjmXGfNMH9PLQRXFf5MI3b" />
@@ -50,18 +55,34 @@
       <workItem from="1602060712696" duration="4094000" />
       <workItem from="1604356671374" duration="1998000" />
       <workItem from="1604400555618" duration="6051000" />
-      <workItem from="1604589275401" duration="1049000" />
+      <workItem from="1604589275401" duration="3460000" />
     </task>
+    <task id="LOCAL-00001" summary="ajout de plus de fonctionalitée">
+      <created>1604590394706</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604590394706</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ajout de plus de fonctionalitée" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout de plus de fonctionalitée" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604401156317">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1604401156317" />
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1604590392598">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1604590392598" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1602072219517">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -70,6 +91,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1604357529370" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1604590398340">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1604590398340" />
     <state x="400" y="135" key="refactoring.ChangeSignatureDialog" timestamp="1604589902769">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
